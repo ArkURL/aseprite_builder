@@ -68,7 +68,7 @@ jobs:
     steps:
       - name: List Visual Studio Directories (CMD)
         shell: cmd  
-        run: dir "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\Common7" /s /b
+        run: dir "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\Common7\Tools" /s /b
       - name: (Windows) Install dependencies
         if: matrix.os == 'windows-latest'
         uses: seanmiddleditch/gha-setup-ninja@v1
